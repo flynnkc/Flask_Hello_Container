@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-   color = os.getenv('COLOR', 'white')
+   color = os.getenv('COLOR', 'blue')
    return render_template('index.html', color=color)
 
 #if __name__ == '__main__':
